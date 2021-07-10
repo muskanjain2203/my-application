@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/lowerHomeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/lower_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/upperHomeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginEnd="@dimen/margin_17dp"
+            android:layout_marginRight="@dimen/margin_17dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/upper_home_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageHomeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_14dp"
+            android:layout_marginLeft="@dimen/margin_14dp"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:src="@drawable/medicart_home_logo"
+            app:layout_constraintStart_toStartOf="@id/upperHomeImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_119dp"
+            android:layout_marginLeft="@dimen/margin_119dp"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_marginEnd="@dimen/margin_77dp"
+            android:layout_marginRight="@dimen/margin_77dp"
+            app:layout_constraintEnd_toEndOf="@+id/upperHomeImage"
+            app:layout_constraintStart_toEndOf="@id/imageHomeLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_bell_icon" />
+
+        <ImageView
+            android:id="@+id/imageCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_27dp"
+            android:layout_marginLeft="@dimen/margin_27dp"
+            app:layout_constraintBottom_toBottomOf="@id/imageNotification"
+            app:layout_constraintStart_toEndOf="@id/imageNotification"
+            app:layout_constraintTop_toTopOf="@id/imageNotification"
+            app:layout_constraintEnd_toEndOf="@id/upperHomeImage"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/cart_image"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/nameEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_55dp"
+            android:layout_marginEnd="@dimen/margin_31dp"
+            android:layout_marginRight="@dimen/margin_31dp"
+            android:layout_marginStart="@dimen/margin_button_width"
+            android:background="@drawable/edit_text_bg"
+            android:paddingTop="@dimen/padding_16dp"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingStart="@dimen/padding_23dp"
+            android:paddingEnd="@dimen/padding_23dp"
+            android:textColorHint="@color/lightest_grey"
+            android:drawableEnd="@drawable/search"
+            android:textSize="@dimen/text_size_provide_details"
+            android:hint="@string/search_for_medicines_here"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageHomeLogo" />
+
+
+        <ImageView
+            android:id="@+id/imageWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/margin_19dp"
+            android:layout_marginEnd="@dimen/margin_17dp"
+            android:layout_marginRight="@dimen/margin_17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lowerHomeImage"
+            android:src="@drawable/white_home_image" />
+
+        <ImageView
+            android:id="@+id/imageMid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginLeft="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/margin_19dp"
+            android:layout_marginEnd="@dimen/margin_17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageWhite"
+            android:src="@drawable/mid_home_image"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageView
+            android:id="@+id/imageViewBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text"
+            android:layout_marginEnd="@dimen/margin_76dp"
+            android:layout_marginRight="@dimen/margin_76dp"
+            app:layout_constraintEnd_toEndOf="@id/imageMid"
+            app:layout_constraintTop_toTopOf="@id/imageMid"
+            android:src="@drawable/book" />
+
+        <ImageView
+            android:id="@+id/imageViewPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewBook"
+            app:layout_constraintStart_toEndOf="@id/imageViewBook"
+            app:layout_constraintTop_toTopOf="@id/imageViewBook"
+            android:src="@drawable/pad" />
+
+        <TextView
+            android:id="@+id/textViewGetMedicines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_medicines_easily"
+            android:textSize="@dimen/text_size_login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/margin_29dp"
+            android:layout_marginTop="@dimen/margin_13dp"
+            app:layout_constraintStart_toStartOf="@id/imageMid"
+            app:layout_constraintTop_toTopOf="@id/imageMid"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/just_upload_your_prescription_here"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/imageMid"
+            app:layout_constraintTop_toBottomOf="@id/textViewGetMedicines"
+            android:textSize="@dimen/text_size_14sp"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:layout_marginStart="@dimen/margin_29dp"
+            tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_home_bg"
+            android:text="@string/click_to_upload"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            tools:ignore="MissingConstraints"
+            android:gravity="start|center"
+            android:drawablePadding="@dimen/_10sdp"
+            android:paddingStart="@dimen/_70sdp"
+            app:layout_constraintEnd_toEndOf="@id/imageMid"
+            app:layout_constraintStart_toStartOf="@id/textViewUpload"
+            app:layout_constraintBottom_toBottomOf="@id/imageMid"
+            app:layout_constraintTop_toTopOf="@id/textViewUpload"
+            android:layout_marginEnd="@dimen/margin_31dp"
+            android:layout_marginBottom="@dimen/margin_13dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:drawableStart="@drawable/arrow"
+            />
+
+        <TextView
+            android:id="@+id/textShopByCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginLeft="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/margin_38dp"
+            android:text="@string/shop_by_category"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageMid" />
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            tools:itemCount="3"-->
+<!--            tools:listitem="@layout/activity_recycler"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textShopByCategory"-->
+<!--            tools:ignore="DuplicateIds" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopByCategoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_edit_text_Top"
+            android:layout_marginStart="@dimen/padding_button_text_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textShopByCategory"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textMostPurchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginLeft="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="@string/most_purchased"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shopByCategoryRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mostPurchasedRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_marginStart="@dimen/margin_18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textMostPurchased"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/whiteImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/margin_button_width"
+            android:layout_marginEnd="@dimen/margin_17dp"
+            android:layout_marginRight="@dimen/margin_17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mostPurchasedRecyclerView"
+            android:src="@drawable/white_home_image" />
+
+
+        <TextView
+            android:id="@+id/textForHeadache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginLeft="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/margin_27dp"
+            android:text="@string/for_headache"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whiteImage" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/headacheRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_marginStart="@dimen/margin_18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textForHeadache"
+            tools:ignore="DuplicateIds" />
+
+
+        <TextView
+            android:id="@+id/textForGastric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginLeft="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/for_gastric_problem"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headacheRecyclerView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gastricPainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_marginStart="@dimen/margin_18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textForGastric"
+            tools:ignore="DuplicateIds" />
+
+
+        <TextView
+            android:id="@+id/textForCough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_17dp"
+            android:layout_marginLeft="@dimen/margin_17dp"
+            android:layout_marginTop="@dimen/_46sdp"
+            android:text="@string/for_common_cold_and_cough"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gastricPainRecyclerView" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/coughRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_18dp"
+            android:layout_marginStart="@dimen/margin_18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textForCough"
+            tools:ignore="DuplicateIds" />
+
+
+        <TextView
+            android:id="@+id/textGetWellSoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_160dp"
+            android:layout_marginLeft="@dimen/margin_160dp"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/margin_160dp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:text="@string/get_well_soon"
+            android:textColor="@color/greenish"
+            android:textSize="@dimen/text_size_18sp"
+            android:fontFamily="@font/playball"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coughRecyclerView"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            app:layout_constraintTop_toTopOf="@id/textGetWellSoon"
+            app:layout_constraintBottom_toBottomOf="@id/textGetWellSoon"
+            app:layout_constraintEnd_toStartOf="@id/textGetWellSoon"
+            android:layout_marginEnd="@dimen/margin_edit_text_Top"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            app:layout_constraintTop_toTopOf="@id/textGetWellSoon"
+            app:layout_constraintBottom_toBottomOf="@id/textGetWellSoon"
+            app:layout_constraintStart_toEndOf="@id/textGetWellSoon"
+            android:layout_marginStart="@dimen/margin_edit_text_Top"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

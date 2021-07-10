@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DashBoard</string>
+    <string name="login_with_your_phone"><b>Login with your phone</b></string>
+    <string name="by_clicking_check_policy">By clicking continue, you agree with our privacy policy</string>
+    <string name="Continue_button">Continue</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="please_provide_us_few_details_so_that_we_can_recognize_you">Please provide us few details so that we can recognize you</string>
+    <string name="welcome_to_medicart"><b>Welcome to Medicart</b></string>
+    <string name="your_name">Your name</string>
+    <string name="your_email_id">Your Email Id</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="Enter_valid_email">Enter valid email</string>
+    <string name="data_is_valid">Data is valid</string>
+    <string name="sorry_check_information">Sorry check information</string>
+    <string name="please_fill_all_entries">Please fill all the Entries</string>
+    <string name="field_cannot_be_empty">Field cannot be empty</string>
+    <string name="emter_only_alphabetical_character">Enter only alphabetical character</string>
+    <string name="search_for_medicines_here">Search for medicines here</string>
+    <string name="shop_by_category">Shop by category</string>
+    <string name="get_medicines_easily">Get medicines easily</string>
+    <string name="just_upload_your_prescription_here">Just upload your Prescription here</string>
+    <string name="click_to_upload">Click to Upload</string>
+    <string name="most_purchased">Most Purchased</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="rs">Rs 120</string>
+    <string name="get_well_soon">Get Well Soon</string>
+    <string name="for_common_cold_and_cough">For common cold and cough</string>
+    <string name="category_1">Category 1</string>
+    <string name="for_gastric_problem">For Gastric Problem</string>
+    <string name="for_headache">For Headache</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab1">Tab 1</string>
+    <string name="_10_off">10% off</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_at_pellentesque_aliquet_maecenas_massa_egestas_sapien_turpis_purus_mauris_vestibulum_augue_mattis_ut_laoreet_porta_vel_etiam_velit_leo_in_quam_et_in_leo_lectus_adipiscing_arcu_ut_ac_lectus_in_orci_pulvinar_dignissim_nulla_ut_arcu_vestibulum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pellentesque aliquet maecenas massa egestas sapien turpis purus. Mauris vestibulum, augue mattis ut. Laoreet porta vel etiam velit leo in quam et in. Leo, lectus adipiscing arcu, ut. Ac lectus in orci pulvinar dignissim nulla ut arcu vestibulum.</string>
+    <string name="by_company_name">by company name</string>
+    <string name="_120">₹ 120 /</string>
+    <string name="_10_tablets_pack">10 tablets pack</string>
+    <string name="_140">₹140</string>
+    <string name="_20_off">₹20 off</string>
+    <string name="_1">1</string>
+    <string name="description">Description</string>
+
+</resources>
